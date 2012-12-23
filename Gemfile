@@ -9,8 +9,8 @@ gem 'rails', '3.2.1'
 #gem 'sqlite3-ruby', :require => 'sqlite3'
 
 ###UNLIKE_THE_BOOK
-#gem 'sqlite3'
-gem 'pg'
+gem 'sqlite3'
+#gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -54,3 +54,11 @@ gem 'jquery-rails'
 # group :test do
 #   gem 'webrat'
 # end
+
+group :development do
+  gem 'rspec-rails', '2.0.1'
+end
+group :test do
+  gem 'rspec', '2.0.1'
+  gem 'webrat', '0.7.1'
+end
